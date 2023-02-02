@@ -11,7 +11,8 @@ def total_price(persons: int, breakfast: bool = False) -> int:
     """ Calculates total price for staying at the hotel """
     if breakfast:
         price_person = PRICE_NIGHT + PRICE_BREAKFAST
-    price_person = PRICE_NIGHT
+    else:
+        price_person = PRICE_NIGHT
     
     return persons * price_person
 
